@@ -37,14 +37,22 @@ class MyHomePage extends StatelessWidget {
                   c.increment();
                 },
                 child: Text("+")),
+            Box(),
+            Box()
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+    );
+  }
+}
+
+class Box extends StatelessWidget {
+  CountController c = Get.find();
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Obx(() => Text("${c.count}")),
     );
   }
 }
