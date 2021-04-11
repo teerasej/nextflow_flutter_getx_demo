@@ -30,8 +30,11 @@ class MyHomePage extends StatelessWidget {
       ),
       body: Center(
         child: Column(
+          children: [
+            Obx(() => Text("${c.count}")),
             ElevatedButton(
                 onPressed: () {
+                  c.increment();
                 },
                 child: Text("+")),
           ],
