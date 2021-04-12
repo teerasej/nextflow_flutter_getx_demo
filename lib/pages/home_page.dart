@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -11,9 +12,14 @@ class HomePage extends StatelessWidget {
         padding: EdgeInsets.all(10),
         child: Column(
           children: [
-            ElevatedButton(
-              onPressed: () {},
-              child: Text('Counter'),
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                onPressed: () {
+                  Get.toNamed('/counter-demo');
+                },
+                child: Text('Counter'),
+              ),
             )
           ],
         ),
