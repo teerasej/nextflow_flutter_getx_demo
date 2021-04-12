@@ -16,6 +16,14 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: HomePage(),
+      initialRoute: '/',
+      getPages: [
+        GetPage(name: '/', page: () => HomePage()),
+        GetPage(
+          name: '/counter-demo',
+          page: () => CounterPage(),
+        )
+      ],
     );
   }
 }
