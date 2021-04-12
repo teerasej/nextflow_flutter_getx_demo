@@ -10,7 +10,7 @@ class CounterPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("GetX Demo"),
+        title: Text("Counter"),
       ),
       body: Center(
         child: Column(
