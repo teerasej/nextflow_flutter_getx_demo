@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:nextflow_flutter_getx_demo/pages/counter_page/counter_page.dart';
+import 'package:nextflow_flutter_getx_demo/pages/home_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: CounterPage(),
+      home: HomePage(),
     );
   }
 }
