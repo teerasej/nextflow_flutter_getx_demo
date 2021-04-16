@@ -20,6 +20,18 @@ class HomePage extends StatelessWidget {
                 },
                 child: Text('Counter'),
               ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                onPressed: () {
+                  Get.toNamed('/covid-19');
+                },
+                child: Text('Covid-19 Stat'),
+              ),
             )
           ],
         ),

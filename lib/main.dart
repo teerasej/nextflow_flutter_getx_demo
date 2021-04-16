@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:nextflow_flutter_getx_demo/pages/counter_page/counter_page.dart';
+import 'package:nextflow_flutter_getx_demo/pages/covid_stat_dashboard_page.dart';
 import 'package:nextflow_flutter_getx_demo/pages/home_page.dart';
 
 void main() {
@@ -19,10 +20,8 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       getPages: [
         GetPage(name: '/', page: () => HomePage()),
-        GetPage(
-          name: '/counter-demo',
-          page: () => CounterPage(),
-        )
+        GetPage(name: '/counter-demo', page: () => CounterPage()),
+        GetPage(name: '/covid-19', page: () => CovidStatDashBoardPage())
       ],
     );
   }
